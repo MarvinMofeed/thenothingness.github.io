@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.noise{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: 0.05;
+    z-index: 1000;
+    pointer-events: none;
+    background: url(noise.gif);
+}
+
+.container{
+    text-align: center;
+    color: white;
+}
+
+.header{
+    padding-top: 60px;
+    color: lightgray;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.subcontainer{
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.teams img{
+    width: 250px;
+    height: 250px;
+}
+
+.teams:hover{
+    background-color: rgba(85, 85, 85, 0.5);
+    border-radius: 25px;
+}
+
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font: 16px;
+    text-transform: uppercase;
+}
+
+.role{
+    font-weight: lighter;
+    font-style: italic;
+    color: darkgray;
+}
+
+.about{
+    margin: 20px 0;
+    font-weight: light;
+    font-size: 15px;
+    color: gray;
+}
+
+.copyrights{
+    color: white;
+    font-size: smaller;
+}
+
+@media only screen and (max-width: 1000px){
+    .teams{
+        max-width: 100%;
+    }
+}
